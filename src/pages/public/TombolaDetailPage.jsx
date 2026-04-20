@@ -221,7 +221,7 @@ export default function TombolaDetailPage() {
         </div>
       </div>
 
-      <AchatModal open={achatOpen} onClose={() => setAchatOpen(false)} tombola={tombola} />
+      {tombola && (<AchatModal open={achatOpen} onClose={() => setAchatOpen(false)} tombola={tombola} />)}
     </div>
   );
 }
