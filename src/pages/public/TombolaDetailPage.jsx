@@ -44,7 +44,7 @@ export default function TombolaDetailPage() {
       if (!isAuthenticated) { navigate('/auth/connexion'); return; }
       setAchatOpen(true);
     }}
-    className='btn-accent w-full py-3.5 text-base'
+    className="btn-accent w-full py-3.5 text-base"
   >
     Acheter mes tickets
   </button>
