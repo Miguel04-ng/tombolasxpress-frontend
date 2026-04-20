@@ -39,15 +39,10 @@ export default function TombolaDetailPage() {
   const disponibles = tombola.nombre_tickets - tombola.tickets_vendus;
   const canBuy     = tombola.statut === 'ouverte' && disponibles > 0;
 
-  <button
-    onClick={() =>{
-      if (!isAuthenticated) { navigate('/auth/connexion'); return; }
-      setAchatOpen(true);
-    }}
-    className="btn-accent w-full py-3.5 text-base"
-  >
-    Acheter mes tickets
-  </button>
+  const handleAcheter = () => {
+    if (!isAuthenticated) { navigate('/auth/connexion'); return; }
+    setAchatOpen(true);
+  };
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
