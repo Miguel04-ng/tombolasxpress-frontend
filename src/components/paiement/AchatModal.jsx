@@ -113,7 +113,7 @@ export default function AchatModal({ open, onClose, tombola }) {
   const disponibles = tombola.nombre_tickets - tombola.tickets_vendus;
 
   return (
-    <Modal open={open} onClose={handleClose} title="Acheter des tickets" size="md">
+    <Modal isOpen={open} onClose={handleClose} title="Acheter des tickets" size="md">
       {/* ── FORMULAIRE ────────────────────────────────────── */}
       {step === STEPS.FORM && (
         <div className="space-y-5">
